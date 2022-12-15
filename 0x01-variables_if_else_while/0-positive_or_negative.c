@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
-* main - determines if a number is positive, negative
+* main - determines if a number is positive or negative
 *
 * Description: program will assign a random number to the variable n each time
 * it is executed
@@ -25,4 +25,4 @@ int main(void)
 		printf("%d is positive\n", n);
 
 	return (0);
-
+}
