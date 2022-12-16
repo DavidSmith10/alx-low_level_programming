@@ -1,6 +1,5 @@
 #include "main"
 
-
 int main(void)
 {
 _putchar('_');
