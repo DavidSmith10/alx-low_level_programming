@@ -1,31 +1,46 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
-* main - take the fizz-buzz challenge
+* main - entry point
 *
-* Return: Always 0
+* Return: void
 */
 
 int main(void)
 {
-	int n;
 
-	for (n = 1; n < 101; n++)
-	{
-		if (n % 5 == 0 && n % 3 == 0)
-			printf("FizzBuzz ");
-		else if (n % 5 == 0)
-			if (n == 100)
-				printf("Buzz ");
-			else
-				printf("Buzz ");
-		else if (n % 3 == 0)
-			printf("Fizz ");
-		else
-			printf("%d ", n);
-	}
-	printf("\n");
+int p = 100;
+int i;
 
-	return (0);
+i = 1;
+while (i <= p)
+{
+if (i % 3 == 0 && i % 5 == 0)
+{
+printf("FrizzBuzz ");
+}
+
+else if (i % 3 == 0)
+{
+printf("Fizz ");
+}
+
+else if (i % 5 == 0)
+{
+if (i < p)
+printf("Buzz ");
+
+else
+printf("Buzz");
+}
+
+else
+{
+printf("%i ", i);
+}
+
+i++;
+
+}
+printf("\n");
+return (0);
 }
